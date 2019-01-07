@@ -98,12 +98,9 @@ a {
   .main-header::after {
     content: '';
     position: absolute;
-    background: url("../img/index-background-mobile.png") no-repeat #63a73a;
+    background: url("../img/index-background-mobile.png") no-repeat center center #63a73a;
     width: 100%;
     min-height: 310px;
-    background-position: bottom;
-    background-position-x: center;
-    background-position-y: center;
     z-index: -1; }
 
 .main-top {
@@ -804,8 +801,7 @@ a {
             box-sizing: border-box;
     max-width: 50%;
     min-height: 230px;
-    padding: 0;
-    padding-right: 130px;
+    padding: 0 130px 0 0;
     margin-bottom: 90px; }
     .instructions__item::before {
       width: 80px;
@@ -995,8 +991,7 @@ a {
     min-height: 695px;
     top: 0;
     right: 0;
-    background: url("../img/index-background-desc.png") no-repeat #63a73a;
-    background-position: bottom 0 right 0; }
+    background: url("../img/index-background-desc.png") no-repeat bottom 0 right 0 #63a73a; }
   .main-top {
     margin-top: 0;
     padding-top: 50px; }
@@ -1097,8 +1092,9 @@ a {
   .example__left {
     width: 540px;
     padding: 0;
-    margin-right: 84px; }
+    margin-right: 16px; }
   .example__result {
     width: 370px; }
   .compare__picture img {
-    margin-top: -170px; } }
+    margin-top: -170px;
+    padding-right: 94px; } }
