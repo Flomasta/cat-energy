@@ -1904,7 +1904,8 @@ a {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  padding: 0 10px; }
 
 .form-header {
   margin-bottom: 20px; }
