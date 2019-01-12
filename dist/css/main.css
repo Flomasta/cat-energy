@@ -159,7 +159,7 @@ a {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 10px;
+  right: -10px;
   top: 10px; }
 
 .menu-btn span {
@@ -1158,8 +1158,6 @@ a {
     line-height: 20px;
     text-transform: uppercase;
     font-weight: 500; }
-  .catalog-menu ul .catalog-menu__item--active {
-    border-bottom: 2px solid #68b738; }
 
 .catalog-menu__item-3 {
   border-bottom: #e6e6e6 1px solid; }
@@ -1484,6 +1482,8 @@ a {
     border: 0; }
   .catalog-header {
     margin-bottom: 0; }
+  .catalog-menu__item--active {
+    border-bottom: 2px solid #68b738; }
   .catalog-top {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -1635,12 +1635,17 @@ a {
     display: none; }
   .catalog__img--cross {
     min-height: 60px;
-    min-width: 100%;
+    min-width: 60px;
     margin: 54px 0;
     position: relative; }
   .catalog__img--cross::before, .catalog__img--cross::after {
     width: 60px;
     height: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     position: absolute; }
   .item__title--show-more {
     font-family: 'Oswald', 'Arial', sans-serif;
@@ -1807,7 +1812,11 @@ a {
     line-height: 20px;
     text-transform: uppercase; }
   .catalog__img--cross::before, .catalog__img--cross::after {
-    left: 38%; }
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
   .main__header--catalog {
     padding-left: 30px; }
   .border__wrapper {
@@ -1981,13 +1990,16 @@ a {
 .form__input {
   height: 43px;
   width: 100%;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e6e6e6;
   margin-left: 15px; }
+
+.form__input:hover {
+  border: 1px solid #cdcdcd; }
 
 .form__input:invalid {
   border: 1px solid #ff8282; }
 
-.form__input-age:focus {
+.form__input--nreq:focus, .form__input--req:valid {
   border: 1px solid black; }
 
 .form__input:focus {
@@ -2159,6 +2171,10 @@ a {
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 16px; }
+
+.form__submit {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 @media (max-width: 440px) {
   .line-fix {
@@ -2354,10 +2370,14 @@ a {
     padding-top: 18px;
     padding-bottom: 18px; }
   .form__notification {
-    margin-left: 40px;
+    margin-left: 90px;
+    text-align: left;
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 16px;
-    line-height: 16px; } }
+    line-height: 16px; }
+  .form__submit {
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 @media (min-width: 1300px) {
   .profile-form {
@@ -2431,4 +2451,6 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+  .form__notification {
+    margin-left: 40px; } }

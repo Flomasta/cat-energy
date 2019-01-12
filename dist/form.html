@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма заказа</title>
+    <title>Форма заказа Cat Energy</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -59,11 +60,11 @@
             <div class="general__questions">
                 <fieldset class="personal__questions general__questions--item">
                     <div class="form__line"><label for="name" class="form__decoration">Имя:<sup>*</sup></label>
-                        <input class="form__input" type="text" id="name" placeholder="Барсик" required></div>
+                        <input class="form__input form__input--req" type="text" id="name" placeholder="Барсик" required></div>
                     <div class="form__line"><label for="weight" class="form__decoration">Вес(кг):<sup>*</sup></label>
-                        <input class="form__input " type="text" id="weight" placeholder="7" required></div>
+                        <input class="form__input form__input--req" type="text" id="weight" placeholder="7" required></div>
                     <div class="form__line"><label for="age" class="form__decoration">Возраст(Лет):</label>
-                        <input class="form__input form__input-age" type="text" id="age" placeholder="7"></div>
+                        <input class="form__input form__input-age form__input--nreq" type="text" id="age" placeholder="7"></div>
                 </fieldset>
                 <fieldset class="program-choose general__questions--item">
                     <div class="form__line form__line--radio">
@@ -96,11 +97,11 @@
 
                 <div class="contacts-form__wrapper">
                     <div class="form__line contacts-form__item"><label for="email" class="form__decoration">E‑mail:<sup>*</sup></label>
-                        <input type="email" id="email" class="form__input" required placeholder="kuklachev@gmail.com">
+                        <input type="email" id="email" class="form__input form__input--req" required placeholder="kuklachev@gmail.com">
                     </div>
 
                     <div class="form__line contacts-form__item"><label for="phone" class="form__decoration">Телефон:<sup>*</sup></label>
-                        <input type="tel" id="phone" class="form__input" required placeholder="8 (960) 900-60-90">
+                        <input type="tel" id="phone" class="form__input form__input--req" required placeholder="8 (960) 900-60-90">
                     </div>
                 </div>
             </fieldset>
@@ -109,7 +110,7 @@
 
 
                 <div class="form__line form__line--textarea">
-                    <textarea class="form__input form__input--textarea" name="comment" id="comment" cols="30" rows="10"
+                    <textarea class="form__input form__input--textarea form__input--nreq" name="comment" id="comment" cols="30" rows="10"
                               placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
 
